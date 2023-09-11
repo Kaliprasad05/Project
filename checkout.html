@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  
+    <div class="container text-center py-5 " data-aos="fade-down">
+        <h1 class="text-primary">Checkout</h1>
+        <p class="lead">Please fill out the billing details & payment</p>
+        </div>
+
+        <div class="container" data-aos="fade-up"
+        data-aos-duration="1000">
+            <h4 class="mb-3">Billing Address</h4>
+            <form novalidate>
+            <div class="row g-3">
+            <div class="col-sm-6">
+            <label for="firstName"
+            class="form-label">First Name</label>
+            <input id="firstName" type="text"
+            class="form-control"
+            placeholder="John" required>
+            
+            </div>
+            <div class="col-sm-6">
+            <label for="lastName"
+            class="form-label">Last Name</label>
+            <input id="lastName" type="text"
+            class="form-control"
+            placeholder="Smith" required>
+            
+            </div>
+            <div class="col-12">
+              <label for="UserName"
+            class="form-label">UserName</label>
+            <input id="lastName" type="text"
+            class="form-control"
+            placeholder="Smith" required>
+           
+            </div>
+
+            <div class="col-md-5">
+              <label for="country"
+              class="form-label">Country</label>
+              <select id="username"
+              class="form-control" >
+              <option value="">Choose...</option>
+              <option
+              value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="China">China</option>
+              </select>
+             
+              </div>
+
+              <div class="col-md-4">
+                <label for="state"
+                class="form-label">State</label>
+                <select id="username"
+                class="form-control" >
+                <option value="">Choose...</option>
+                <option
+                value="Karnataka">Karnataka</option>
+                <option value="Andra">Andra</option>
+                <option value="Kerala">Kerala</option>
+                </select>
+                
+                </div>
+
+                <div class="col-md-3">
+                  <label for="postcode"
+                  class="form-label">Postcode</label>
+                  <input id="postcode" type="number"
+                  class="form-control"
+                  placeholder="1234" required>
+                  
+                  </div>
+
+                  <hr class="my-4">
+
+                 
+                  <div class="col-12">
+                    <h5>Selected Course</h5>
+                    <div class="form-check">
+                    <input id="Java"
+                    type="checkbox"
+                    class="form-check-input">
+                    <label class="form-check-label"
+                    for="Java">JAVA FULLSTACK
+                   </label>
+                    </div>
+                    <div class="form-check">
+                    <input id="AWS"
+                    type="checkbox"
+                    class="form-check-input">
+                    <label class="form-check-label"
+                    for="safeInfo">AWS</label>
+                    </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h4 class="mb-3" >Payments</h4>
+                      <div class="form-check">
+                      <input id="creditCard"
+                      name="payment Method" type="radio"
+                        class="form-check-input" 
+                          required>
+                      <label for="creditCard">Credit Card</label>
+                      </div>
+                      <div class="form-check">
+                        <input id="debitcard"
+                        name="payment Method" type="radio"
+                          class="form-check-input" checked
+                            required>
+                          <label for="debitcard">
+                            Debit card </label>
+                      </div>
+                      <div class="form-check">
+                        <input id="Paytm"
+                        name="payment Method" type="radio"
+                          class="form-check-input" 
+                            required>
+                          <label for="paytm">
+                           Paytm </label>
+                      </div>
+                      
+
+                      <div class="row my-4">
+                        <div class="col-md-6">
+                        <label for="fullName"
+                        class=form-label>
+                        Name on card
+                        </label>
+                        <input id="fullName" type="text"
+                        class="form-control">
+                        <small class="text-muted">
+                        Full name as displayed on
+                        card.
+                        </small>
+                        <div class="invalid-feedback">
+                        Name on card is required.
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <label for="cc-number"
+                        class=form-label>
+                        Credit Card Number
+                        </label>
+                        <input id="cc-number"
+                        type="text" class="form-control">
+                        <div class="invalid-feedback">
+                        Credit Card number is
+                        required.
+                        </div>
+                        </div>
+                        <div class=" col-lg-2 col-md-3 col-sm-3 col-3">
+                          <label for="cc-expire"
+                          class=form-label>
+                          Expiration
+                          </label>
+                          <input id="cc-expire"
+                          type="text" class="form-control">
+                          <div class="invalid-feedback">
+                          Expiration is required.
+                          </div>
+                          </div>
+                          <div class=" col-lg-2 col-md-3 col-sm-3 col-3">
+                          <label for="CVV"
+                          class=form-label>
+                          CVV
+                          </label>
+                          <input id="cvv" type="text"
+                          class="form-control">
+                          <div class="invalid-feedback">
+                          CVV is required.
+                          </div>
+                        </div>
+                        </div>
+                        <hr class="my-4">
+                       
+            </div>
+            <div class="text-center mb-3"><button class="btn btn-primary btn-lg ">Continue to Payment</button></div>
+            </form>
+            
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/79b61e54f0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
